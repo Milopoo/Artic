@@ -20,6 +20,10 @@
       <!-- responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- awesome fontfamily -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -34,10 +38,10 @@
       <!-- end loader -->
       <div id="mySidepanel" class="sidepanel">
          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-         <a href="index.html">Home</a>
-         <a href="about.html">About us</a>
+         <a href="index.html">Inicio</a>
+         <a href="about.html">Sobre Nosotros</a>
          <a href="searvices.html">Servicios</a>
-         <a class="active" href="shop.html">Gallería</a>
+         <a class="active" href="shop.html">Galería</a>
          <a href="contact.html">Contáctanos</a>
       </div>
       <!-- header -->
@@ -54,7 +58,7 @@
                   <div class="col-sm-9">
                      <ul class="email text_align_right">
                         <li class="d_none"> <a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i>
-                           Login</a>
+                           Iniciar Sesión</a>
                         </li>
                         <li> <button class="openbtn" onclick="openNav()"><img src="images/menu_btn.png"></button></li>
                      </ul>
@@ -78,7 +82,7 @@
             <div class="row">
                <div class="col-md-4 col-sm-6 margin_bottom40">
                   <div id="ho_show" class="pics">
-                     <figure><img class="img_responsive" src="images/lobo.jpg" alt="#"/></figure>
+                     <figure><img class="img_responsive" src="images/lobo.jpg"  alt="#"/></figure>
                      <div class="pics_icon">
                         <a href="javascript:void(0)">
                         <i class="fa fa-search" aria-hidden="true"></i>
@@ -90,8 +94,8 @@
                   <div id="ho_show" class="pics">
                      <figure><img class="img_responsive" src="images/final1.jpg" alt="#"/></figure>
                      <div class="pics_icon">
-                        <a href="javascript:void(0)">
-                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
+                          <i class="fa fa-search" aria-hidden="true"></i>
                         </a>
                      </div>
                   </div>
@@ -129,6 +133,66 @@
                <div class="col-md-4 col-sm-6 margin_bottom40">
                   <div id="ho_show" class="pics">
                      <figure><img class="img_responsive" src="images/Render.jpg" alt="#"/></figure>
+                     <div class="pics_icon">
+                        <a href="javascript:void(0)">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 margin_bottom40">
+                  <div id="ho_show" class="pics">
+                     <figure><img class="img_responsive" src="images/dieciochoava (1).png" alt="#"/></figure>
+                     <div class="pics_icon">
+                        <a href="javascript:void(0)">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 margin_bottom40">
+                  <div id="ho_show" class="pics">
+                     <figure><img class="img_responsive" src="images/360_ (1).png" alt="#"/></figure>
+                     <div class="pics_icon">
+                        <a href="javascript:void(0)">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 margin_bottom40">
+                  <div id="ho_show" class="pics">
+                     <figure><img class="img_responsive" src="images/Gato (1).jpg" alt="#"/></figure>
+                     <div class="pics_icon">
+                        <a href="javascript:void(0)">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 margin_bottom40">
+                  <div id="ho_show" class="pics">
+                     <figure><img class="img_responsive" src="images/mama.png" alt="#"/></figure>
+                     <div class="pics_icon">
+                        <a href="javascript:void(0)">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 margin_bottom40">
+                  <div id="ho_show" class="pics">
+                     <figure><img class="img_responsive" src="images/Miloicon (1).jpg" alt="#"/></figure>
+                     <div class="pics_icon">
+                        <a href="javascript:void(0)">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 margin_bottom40">
+                  <div id="ho_show" class="pics">
+                     <figure><img class="img_responsive" src="images/Render2.png" alt="#"/></figure>
                      <div class="pics_icon">
                         <a href="javascript:void(0)">
                         <i class="fa fa-search" aria-hidden="true"></i>
@@ -180,10 +244,10 @@
                   </div>
                   <div class="col-md-3">
                      <div class="Informa">
-                        <h3>Newsletter</h3>
+                        <h3>Suscribete para más información</h3>
                         <form class="newslatter_form">
-                           <input class="ente" placeholder="Enter your email" type="text" name="Enter your email">
-                           <button class="subs_btn">Subscribe</button>
+                           <input class="ente" placeholder="Ingresa tu email" type="text" name="Ingresa tu email">
+                           <button class="subs_btn">Subscribete</button>
                         </form>
                      </div>
                   </div>
